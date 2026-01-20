@@ -1,4 +1,11 @@
 package com.example.mocha.Repository;
 
-public interface WalletRepository {
+import com.example.mocha.model.Wallet;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.UUID;
+
+@Repository
+public interface WalletRepository extends JpaRepository<Wallet, UUID> {
 }

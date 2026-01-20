@@ -1,11 +1,13 @@
 package com.example.mocha.dto;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class signUpDto {
+@Data
+public class loginDto {
     private String matricNo;
     private String password;
 }
