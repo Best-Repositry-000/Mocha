@@ -8,6 +8,7 @@ public class MochaApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MochaApplication.class, args);
+        System.out.println("Mocha is Brewing!!!");
     }
 
 }
