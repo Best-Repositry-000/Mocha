@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
-//    private final UserRepository userRepository;
 
     @PostMapping("/register")
     public String registerUser(@RequestBody registerDto newUser){
@@ -26,18 +25,4 @@ public class UserController {
     public void login(@RequestBody loginDto user){
         userService.login(user);
     }
-//
-//    @PostMapping("/regi")
-//    public RequestEntity<registerDto> register(@RequestBody registerDto newUser){
-//        try{
-//            if (userRepository.findByMatricNo().isPresent()){
-//                RequestEntity.BadRequest().body("User already exist");
-//            }
-//            else
-//                RequestEntity.ok("user is sucessfully registered")
-//
-//        }catch (Exception e){
-//
-//        }
-//    }
 }
